@@ -1,4 +1,4 @@
-<h3>CUSTOMER SUPPORT SYSTEM</h3>
+<h1>CUSTOMER SUPPORT SYSTEM</h1>
 
 <p>This scrapes the data from Flipkart</p>
 <p>Creates the <b>RAG</b> out of database and provide insightful response with the help of <b>LLM</b></p>
