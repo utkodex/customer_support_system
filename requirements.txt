@@ -3,6 +3,7 @@ langchain
 langchain-community
 langchain_astradb
 langchain_core
+langchain_google_genai
 pandas
 
 -e .
