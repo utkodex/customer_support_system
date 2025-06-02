@@ -1,3 +1,7 @@
 fastapi
 langchain
 langchain-community
+langchain_astradb
+pandas
+
+-e .
