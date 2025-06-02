@@ -1,6 +1,9 @@
-<h2>Steps to follow</h2>
+<h3>CUSTOMER SUPPORT SYSTEM</h3>
 
-* If conda is not running in gitbash
+<p>This scrapes the data from Flipkart</p>
+<p><b>Creates the RAG out of database and provide insightful response with the help of LLM</b></p>
+
+<h2>Installation</h2>
 
 ```
 export PATH="/c/ProgramData/anaconda3/bin:/c/ProgramData/anaconda3/Scripts:$PATH"
