@@ -1,4 +1,4 @@
-<h1>Step to follow</h1>
+<h2>Steps to follow</h2>
 
 ```
 conda create -p venv python=3.10 -y
