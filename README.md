@@ -8,9 +8,6 @@ Creates the **RAG** out of database and provide insightful response with the hel
 
 ## Installation
 
-
-Here’s an explanation for each line of the code in your README:
-
 ---
 
 ### 1. **Exporting PATH**
