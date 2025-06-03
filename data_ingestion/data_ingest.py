@@ -44,4 +44,9 @@ class ingest_data:
         return vstore, inserted_ids
 
 if __name__ == '__main__':
-    data_ingestion = ingest_data()
+    ingest_data=ingest_data()
+    vstore, inserted_ids=ingest_data.data_ingestion(None)
+    print(f"\nInserted{len(inserted_ids)} documents.")
+    # results=vstore.similarity_search('can you tell me the low budget headphone')
+    # for res in results:
+    #     print(f"{res.page_content} {res.metadata}")

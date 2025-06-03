@@ -85,3 +85,7 @@ source activate ./venv
 
 ---
 
+```bash
+unset SSL_CERT_FILE
+set SSL_CERT_FILE=
+```
