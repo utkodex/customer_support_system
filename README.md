@@ -16,8 +16,6 @@ Creates the **RAG** out of database and provide insightful response with the hel
 
 ## Installation
 
----
-
 ### 1. **Exporting PATH**
 
 ```bash
