@@ -82,5 +82,3 @@ source activate ./venv
 
 ---
 
-This step-by-step explanation ensures you understand both the purpose and functionality of each command. Let me know if you'd like further clarification or additional details!
-
