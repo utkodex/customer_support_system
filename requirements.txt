@@ -1,9 +1,13 @@
-fastapi
-langchain
-langchain-community
 langchain_astradb
-langchain_core
-langchain_google_genai
 pandas
+langchain_google_genai
+fastapi 
+uvicorn 
+python-multipart
+jinja2
+python-dotenv 
+langchain 
+langchain_core 
+langchain_groq
 
 -e .
