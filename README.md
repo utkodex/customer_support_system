@@ -1,9 +1,12 @@
-<h1>CUSTOMER SUPPORT SYSTEM</h1>
+# CUSTOMER SUPPORT SYSTEM
 
-<p>This scrapes the data from Flipkart</p>
-<p>Creates the <b>RAG</b> out of database and provide insightful response with the help of <b>LLM</b></p>
+This scrapes the data from Flipkart
+Creates the **RAG** out of database and provide insightful response with the help of **LLM**
 
-<h2>Installation</h2>
+## Table of Contents
+- [Installation](#installation)
+
+## Installation
 
 ```
 export PATH="/c/ProgramData/anaconda3/bin:/c/ProgramData/anaconda3/Scripts:$PATH"
