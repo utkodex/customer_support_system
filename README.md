@@ -2,9 +2,17 @@
 
 This scrapes the data from Flipkart
 Creates the **RAG** out of database and provide insightful response with the help of **LLM**
+---
 
 ## Table of Contents
-- [Installation](#installation)
+
+* [Installation](#installation)
+
+  * [Exporting PATH](#exporting-path)
+  * [Checking Conda Version](#checking-conda-version)
+  * [Creating a Conda Environment](#creating-a-conda-environment)
+  * [Activating the Conda Environment](#activating-the-conda-environment)
+  * [Alternative Activation (Source Command)](#alternative-activation-source-command)
 
 ## Installation
 
