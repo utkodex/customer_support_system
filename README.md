@@ -89,3 +89,9 @@ source activate ./venv
 unset SSL_CERT_FILE
 set SSL_CERT_FILE=
 ```
+
+## For running Fast API
+
+```cmd
+uvicorn main:app --related --port 8001
+```
