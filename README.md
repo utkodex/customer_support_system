@@ -1,4 +1,4 @@
-# CUSTOMER SUPPORT SYSTEM
+# **CUSTOMER SUPPORT SYSTEM**
 
 This scrapes the data from Flipkart
 Creates the **RAG** out of database and provide insightful response with the help of **LLM**
@@ -8,24 +8,79 @@ Creates the **RAG** out of database and provide insightful response with the hel
 
 ## Installation
 
-```
+
+Here’s an explanation for each line of the code in your README:
+
+---
+
+### 1. **Exporting PATH**
+
+```bash
 export PATH="/c/ProgramData/anaconda3/bin:/c/ProgramData/anaconda3/Scripts:$PATH"
 ```
 
-```
+* **What it does:**
+  Updates the system's `PATH` environment variable to include the paths for Anaconda's `bin` and `Scripts` directories. This ensures that Anaconda's commands (like `conda`) can be executed from the terminal.
+* **Why it’s needed:**
+  If `conda` commands are not recognized in your terminal, it could mean that Anaconda's executables are not in your system's `PATH`. This command fixes that issue.
+
+---
+
+### 2. **Checking Conda Version**
+
+```bash
 conda --version
 ```
 
-```
+* **What it does:**
+  Displays the currently installed version of Conda on your system.
+* **Why it’s needed:**
+  Verifies that Conda is properly installed and accessible before proceeding with environment setup.
+
+---
+
+### 3. **Creating a Conda Environment**
+
+```bash
 conda create -p venv python=3.10 -y
 ```
 
-```
-conda activate <path to venv>
+* **What it does:**
+
+  * Creates a new Conda environment in a directory named `venv`.
+  * The `-p` flag specifies the path for the environment.
+  * Installs Python version 3.10 in the environment.
+  * The `-y` flag automatically confirms the environment creation without prompting for user input.
+* **Why it’s needed:**
+  Isolates your project dependencies by creating a virtual environment, ensuring they don't interfere with global Python or other projects.
+
+---
+
+### 4. **Activating the Conda Environment**
+
+```bash
+conda activate "<path to venv>"
 ```
 
-**OR**
+* **What it does:**
+  Activates the Conda environment located at the specified path (`<path to venv>`), making the environment's Python and installed libraries accessible.
+* **Why it’s needed:**
+  You must activate the environment to run Python scripts or install libraries in the specific environment.
 
-```
+---
+
+### 5. **Alternative Activation (Source Command)**
+
+```bash
 source activate ./venv
 ```
+
+* **What it does:**
+  Activates the Conda environment using the `source` command, typically used in Unix/Linux-based systems or Windows PowerShell.
+* **Why it’s needed:**
+  An alternative to `conda activate`, particularly useful on systems where `conda activate` might not work or requires additional configuration.
+
+---
+
+This step-by-step explanation ensures you understand both the purpose and functionality of each command. Let me know if you'd like further clarification or additional details!
+
