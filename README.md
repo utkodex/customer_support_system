@@ -85,6 +85,7 @@ source activate ./venv
 
 ---
 
+## If it shows the SSL certificate error use these cammands
 ```bash
 unset SSL_CERT_FILE
 set SSL_CERT_FILE=
@@ -93,5 +94,7 @@ set SSL_CERT_FILE=
 ## For running Fast API
 
 ```cmd
-uvicorn main:app --related --port 8001
+uvicorn main:app --reload --port 8001
 ```
+
+![Alt Text](images\chatbot.jpeg)
