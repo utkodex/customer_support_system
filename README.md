@@ -14,6 +14,8 @@ Creates the **RAG** out of database and provide insightful response with the hel
   * [Activating the Conda Environment](#activating-the-conda-environment)
   * [Alternative Activation (Source Command)](#alternative-activation-source-command)
 
+* [Demo](#demo)
+
 ## Installation
 
 ### 1. **Exporting PATH**
@@ -97,4 +99,6 @@ set SSL_CERT_FILE=
 uvicorn main:app --reload --port 8001
 ```
 
+# Demo
 ![Alt Text](images/chatbot.jpeg)
+![Alt Text](images/terminal.jpeg)
