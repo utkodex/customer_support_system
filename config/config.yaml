@@ -10,4 +10,4 @@ retriever:
 
 llm:
   provider: "google"
-  model_name: "gemini-1.5-pro" 
+  model_name: "gemini-2.5-flash-preview-04-17" 

@@ -7,16 +7,16 @@ from utils.model_loader import ModelLoader
 from dotenv import load_dotenv
 
 class Retriever:
-
+    
     def __init__(self):
         self.model_loader=ModelLoader()
         self.config=load_config()
         self._load_env_variables()
         self.vstore = None
         self.retriever = None
-
+    
     def _load_env_variables(self):
-
+         
         load_dotenv()
          
         required_vars = ["GOOGLE_API_KEY", "ASTRA_DB_API_ENDPOINT", "ASTRA_DB_APPLICATION_TOKEN", "ASTRA_DB_KEYSPACE"]
@@ -30,8 +30,9 @@ class Retriever:
         self.db_api_endpoint = os.getenv("ASTRA_DB_API_ENDPOINT")
         self.db_application_token = os.getenv("ASTRA_DB_APPLICATION_TOKEN")
         self.db_keyspace = os.getenv("ASTRA_DB_KEYSPACE")
-
-    def create_retriever(self):
+        
+    
+    def load_retriever(self):
         if not self.vstore:
             collection_name = self.config["astra_db"]["collection_name"]
             
@@ -47,16 +48,18 @@ class Retriever:
             retriever = self.vstore.as_retriever(search_kwargs={"k": top_k})
             print("Retriever loaded successfully.")
             return retriever
+   
 
-
+    
     def call_retriever(self,query:str)-> List[Document]:
-        retriever=self.create_retriever()
+        retriever=self.load_retriever()
         output=retriever.invoke(query)
         return output
-
+        
+    
 if __name__=='__main__':
     retriever_obj = Retriever()
-    user_query = "Can you suggest good budget airpods?"
+    user_query = "Can you suggest good budget laptops?"
     results = retriever_obj.call_retriever(user_query)
 
     for idx, doc in enumerate(results, 1):
