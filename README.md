@@ -97,4 +97,4 @@ set SSL_CERT_FILE=
 uvicorn main:app --reload --port 8001
 ```
 
-![Alt Text](images\chatbot.jpeg)
+![Alt Text](images/chatbot.jpeg)
