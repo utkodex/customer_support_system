@@ -1,5 +1,7 @@
 # **CUSTOMER SUPPORT SYSTEM**
 
+![Alt Text](images/chatbot.jpeg)
+
 This scrapes the data from Flipkart.
 
 Creates the **RAG** out of database and provide insightful response with the help of **LLM**.
