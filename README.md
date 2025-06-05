@@ -1,7 +1,8 @@
 # **CUSTOMER SUPPORT SYSTEM**
 
-This scrapes the data from Flipkart
-Creates the **RAG** out of database and provide insightful response with the help of **LLM**
+This scrapes the data from Flipkart.
+
+Creates the **RAG** out of database and provide insightful response with the help of **LLM**.
 ---
 
 ## Table of Contents
@@ -15,6 +16,10 @@ Creates the **RAG** out of database and provide insightful response with the hel
   * [Alternative Activation (Source Command)](#alternative-activation-source-command)
 
 * [Demo](#demo)
+
+* [For running Fast API](#for-running-fast-api)
+
+* [If it shows the SSL certificate error use these cammands](#if-it-shows-the-ssl-certificate-error-use-these-cammands)
 
 ## Installation
 
@@ -87,18 +92,18 @@ source activate ./venv
 
 ---
 
-## If it shows the SSL certificate error use these cammands
-```bash
-unset SSL_CERT_FILE
-set SSL_CERT_FILE=
-```
-
 ## For running Fast API
 
 ```cmd
 uvicorn main:app --reload --port 8001
 ```
 
-# Demo
+## Demo
 ![Alt Text](images/chatbot.jpeg)
 ![Alt Text](images/terminal.jpeg)
+
+## If it shows the SSL certificate error use these cammands
+```bash
+unset SSL_CERT_FILE
+set SSL_CERT_FILE=
+```
